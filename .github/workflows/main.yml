@@ -16,4 +16,14 @@ jobs:
      - name: Running multiple commands
        run: echo "Good evening all"
             echo "This is is my first day of practise"
-            
+  job3:
+    name: Third Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hostname
+        run: hostname
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+      - name: checking hostname
+        run: hostname
+        
