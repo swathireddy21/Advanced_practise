@@ -18,6 +18,7 @@ jobs:
             echo "This is is my first day of practise"
   job3:
     name: Third Job
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: Hostname
@@ -26,4 +27,5 @@ jobs:
         uses: actions/checkout@v6.0.2
       - name: checking hostname
         run: hostname
+        
         
