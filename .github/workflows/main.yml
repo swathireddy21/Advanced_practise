@@ -11,7 +11,7 @@ jobs:
         run: hostname
   job2:
    name: Second job
-   runs-on: ubuubuntu-latest
+   runs-on: ubuntu-latest
    steps:
      - name: Running multiple commands
        run: echo "Good evening all"
