@@ -7,4 +7,13 @@ jobs:
     steps:
       - name: Running the single command in first job
         run: echo "Hi, Hello, Good morning"
-        
+      - name: Checking hostname
+        run: hostname
+  job2:
+   name: Second job
+   runs-on: ubuubuntu-latest
+   steps:
+     - name: Running multiple commands
+       run: echo "Good evening all"
+            echo "This is is my first day of practise"
+            
